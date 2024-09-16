@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora para Niños</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <input type="text" id="pantalla" disabled>
+
+        <div class="button-row">
+            <button onclick="agregarNumero('7')">7</button>
+            <button onclick="agregarNumero('8')">8</button>
+            <button onclick="agregarNumero('9')">9</button>
+            <button class="orange-color" onclick="agregarOperador('/')">÷</button>
+        </div>
+
+        <div class="button-row">
+            <button onclick="agregarNumero('4')">4</button>
+            <button onclick="agregarNumero('5')">5</button>
+            <button onclick="agregarNumero('6')">6</button>
+            <button class="orange-color" onclick="agregarOperador('*')">x</button>
+        </div>
+
+        <div class="button-row">
+            <button onclick="agregarNumero('1')">1</button>
+            <button onclick="agregarNumero('2')">2</button>
+            <button onclick="agregarNumero('3')">3</button>
+            <button class="orange-color" onclick="agregarOperador('-')">-</button>
+        </div>
+
+        <div class="button-row">
+            <button onclick="agregarNumero('0')">0</button>
+            <button class="red-color" onclick="limpiarPantalla()">C</button>
+            <button class="green-color" onclick="calcularResultado()">=</button>
+            <button class="orange-color" onclick="agregarOperador('+')">+</button>
+        </div>
+    </div>
+
+    <div class="tutorial">
+        <h2>¡Aprende a Sumar!</h2>
+        <p>Para sumar dos números:</p>
+        <ul>
+            <li>1. Elige el primer número.</li>
+            <li>2. Presiona el botón <strong>+</strong> para seleccionar la suma.</li>
+            <li>3. Elige el segundo número.</li>
+            <li>4. Presiona el botón <strong>=</strong> para ver el resultado.</li>
+        </ul>
+    </div>
+
+    <div class="integrantes">
+        <h2>Integrantes del Proyecto</h2>
+        <div class="integrante">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="Foto de Mendoza Hurtado">
+            <p><strong>Mendoza Hurtado Jose Fernando</strong></p>
+        </div>
+        <div class="integrante">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="Foto de Barrigóla Mayta">
+            <p><strong>Barrigóla Mayta Ronald Rodrígo</strong></p>
+        </div>
+        <div class="integrante">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="Foto de Chavez Huayta">
+            <p><strong>Chavez Huayta Oscar</strong></p>
+        </div>
+        <div class="integrante">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="Foto de Zacarias Gomez">
+            <p><strong>Zacarias Gomez Cristobal</strong></p>
+        </div>
+        <div class="integrante">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="Foto de Maribel Mamani">
+            <p><strong>Maribel Mamani Tarqui</strong></p>
+        </div>
+        <div class="integrante">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="Foto de Arista Huanca">
+            <p><strong>Arista Huanca Josue Israel</strong></p>
+        </div>
+        <div class="integrante">
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png" alt="Foto de Torrico Lopez">
+            <p><strong>Torrico Lopez Alex</strong></p>
+        </div>
+    </div>
+
+    <!-- Sonidos -->
+    <audio id="click-sound" src="sound/click.mp3"></audio>
+    <audio id="error-sound" src="sound/error.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

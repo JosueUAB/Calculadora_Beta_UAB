@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://wallpapers.com/images/featured-full/dragon-ball-appsmsvihvalq341.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calculadora {
+    background-color: rgba(255, 255, 255, 0.75); /* Mayor transparencia */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 340px; /* Aumentar el ancho para que se ajuste mejor el contenido */
+}
+
+input {
+    width: 100%;
+    height: 80px;
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añadir sombra para un efecto de profundidad */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.orange-color {
+    background-color: #f8a848;
+}
+
+.green-color {
+    background-color: #4caf50;
+}
+
+.red-color {
+    background-color: #f44336;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los botones se ajusten si hay problemas de espacio */
+}
+
+.tutorial {
+    background-color: rgba(255, 255, 255, 0.75); /* Mayor transparencia */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+}
+
+.tutorial h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.tutorial p {
+    font-size: 18px;
+    color: #555;
+}
+
+.tutorial ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tutorial li {
+    font-size: 16px;
+    color: #333;
+}
+
+.integrantes {
+    background-color: rgba(255, 255, 255, 0.75); /* Mayor transparencia */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+}
+
+.integrantes h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.integrante {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.integrante img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.integrante p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
